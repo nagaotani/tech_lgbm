@@ -5,7 +5,6 @@ pandas
 datetime
 scikit-learn
 mplfinance
-warnings
 matplotlib
 scipy
 seaborn
