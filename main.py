@@ -237,7 +237,8 @@ st.markdown(markdown2)
 i = int(todays_class)
 
 
-st.subheader(f'本日のクラスは{i}です')
+#st.subheader(f'本日{}のクラスは{i}です')
+st.subheader(f"本日（{df.index[-1:].strftime('%Y-%m-%d')[0]}）のクラスは{i}です")
 
 # 本日のクラスの過去データを取得
 
