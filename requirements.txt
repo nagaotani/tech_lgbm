@@ -1,0 +1,12 @@
+streamlit
+pandas_datareader
+numpy
+pandas
+datetime
+scikit-learn
+mplfinance
+warnings
+matplotlib
+scipy
+seaborn
+lightgbm
