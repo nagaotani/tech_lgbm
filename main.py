@@ -119,11 +119,11 @@ def technical_calc(df):
     df['ATR60'] = df['TR'].rolling(60).mean() #30
 
 #  予測ターゲットの計算
-    df['1day_result'] = df['Close'].pct_change(-1) #31
-    df['3day_result'] = df['Close'].pct_change(-3) #32
-    df['5day_result'] = df['Close'].pct_change(-5) #33
-    df['10day_result'] = df['Close'].pct_change(-10) #34
-#    df['25day_result'] = df['Close'].pct_change(-25) #35
+    df['1day_result'] = -df['Close'].pct_change(-1) #31
+    df['3day_result'] = -df['Close'].pct_change(-3) #32
+    df['5day_result'] = -df['Close'].pct_change(-5) #33
+    df['10day_result'] = -df['Close'].pct_change(-10) #34
+#    df['25day_result'] = -df['Close'].pct_change(-25) #35
 
     return df
 
